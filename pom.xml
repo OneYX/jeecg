@@ -440,7 +440,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jsp-api</artifactId>
-			<version>2.1</version>
+			<version>2.0</version>
 			<scope>provided</scope>
 			<exclusions>
             	<exclusion>
@@ -830,7 +830,7 @@
 		    <artifactId>groovy</artifactId>
 		    <version>${groovy.version}</version>
 		</dependency>
-		
+
 		<dependency>
 		  <groupId>commons-httpclient</groupId>
 		  <artifactId>commons-httpclient</artifactId>
@@ -854,7 +854,7 @@
 		  <version>1.0</version>
 		</dependency>
 		<!-- baidu ueditor-->
-		
+
 		<!-- jsoup HTML parser library @ http://jsoup.org/ -->
 		<dependency>
 		  <groupId>org.jsoup</groupId>
@@ -868,15 +868,15 @@
 			<version>${guava.version}</version>
 		</dependency>
 		<!-- huangzq add cxf webservice 20151231-->
-		<dependency> 
-			<groupId>org.apache.cxf</groupId> 
-			<artifactId>cxf-rt-frontend-jaxws</artifactId> 
-			<version>${cxf.version}</version> 
-		</dependency> 
-		<dependency> 
-			<groupId>org.apache.cxf</groupId> 
-			<artifactId>cxf-rt-transports-http</artifactId> 
-			<version>${cxf.version}</version> 
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>${cxf.version}</version>
 		</dependency>
 
 		<!-- jeecg plugin begin  -->
@@ -918,20 +918,20 @@
 	                    <server>tomcat6</server>
 	                </configuration>
 	            </plugin>
-	        <plugin>  
-                <artifactId>maven-compiler-plugin</artifactId>  
-                <version>2.3.2</version>  
-                <configuration>  
-                    <source>1.6</source>  
-                    <target>1.6</target>  
+	        <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
                     <encoding>UTF-8</encoding>
-                </configuration>  
+                </configuration>
             </plugin>
             <!-- tomcat7插件 -->
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>${tomcat.version}</version> 
+				<version>${tomcat.version}</version>
 				<configuration>
 					<port>${webserver.port}</port>
 					<path>/${project.artifactId}</path>
@@ -952,7 +952,7 @@
 					<webAppConfig>
 						<contextPath>/${project.artifactId}</contextPath>
 					</webAppConfig>
-					<systemProperties>  
+					<systemProperties>
 						<systemProperty>
 							<name>org.mortbay.util.URI.charset</name>
 							<value>${project.build.sourceEncoding}</value>
@@ -992,5 +992,5 @@
 			</testResource>
 		</testResources>
 	</build>
-	
+
 </project>
